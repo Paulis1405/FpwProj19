@@ -67,7 +67,7 @@ REFERENCES Organizzatori (id) ON UPDATE CASCADE;
 ALTER TABLE Registro ADD FOREIGN KEY Valutazioni_fk (valutazione_id)
 REFERENCES Valutazioni (id) ON UPDATE CASCADE;
 
-
+/**Nomi ironici random **/
 INSERT INTO Autori
 (id, nome, cognome, email, password, foto)
 VALUES
