@@ -35,8 +35,8 @@ public class ValutazioniFactory {
         Valutazioni vl = new Valutazioni();
         vl.setId(1);
         vl.setVoto(4);
-        vl.setComm_autori("Grande stile");
-        vl.setComm_organizzatori("Si può far meglio, nel complesso buono");
+        vl.setComm_autori("Complimenti");
+        vl.setComm_organizzatori("Si può far meglio");
         Articoli artl = ArticoliFactory.getInstance().getArticoliById(1);
         vl.setArticolo(artl);
         valutazioni.add(vl);
@@ -44,8 +44,8 @@ public class ValutazioniFactory {
         Valutazioni vm = new Valutazioni();
         vm.setId(2);
         vm.setVoto(4);
-        vm.setComm_autori("Mi aspettavo meglio");
-        vm.setComm_organizzatori("Ottimo, solo qualcosa da rivedere");
+        vm.setComm_autori("Da migliorare");
+        vm.setComm_organizzatori("Va bene, solo qualcosa da rivedere");
         Articoli art2 = ArticoliFactory.getInstance().getArticoliById(2);
         vl.setArticolo(art2);
         valutazioni.add(vm);
@@ -53,8 +53,8 @@ public class ValutazioniFactory {
         Valutazioni vn = new Valutazioni();
         vl.setId(3);
         vl.setVoto(2);
-        vl.setComm_autori("Non mi piace!");
-        vl.setComm_organizzatori("Le consiglio di ripresentarlo");
+        vl.setComm_autori("Non va bene per me !");
+        vl.setComm_organizzatori("Ritenti per un buon articolo");
         Articoli art3 = ArticoliFactory.getInstance().getArticoliById(3);
         vl.setArticolo(art3);
         valutazioni.add(vn);

@@ -73,14 +73,7 @@ try {
     }
     
     public Organizzatori getOrganizzatoreByEmailPassword(String email, String password){
-        /* Vecchio metodo:
-        List<Organizzatori> organizzatori = this.getOrganizzatori();
-        for(Organizzatori a : organizzatori){
-            if(a.getEmail().equals(email) && a.getPassword().equals(password)){
-                return a;
-            }
-        }
-        */
+      
         try {
             Boolean loggedIn;
 

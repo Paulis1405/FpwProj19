@@ -48,9 +48,9 @@ public class AutoriFactory {
         Autori giampiero = new Autori();
         giampiero.setId(2);
         giampiero.setNome("Giampiero");
-        giampiero.setCognome("Beccarini");
-        giampiero.setEmail("becca@gmail.com");
-        giampiero.setPassword("pierino");
+        giampiero.setCognome("belnome");
+        giampiero.setEmail("addio@gmail.com);
+        giampiero.setPassword("salvino");
         autori.add(giampiero);
          */
 
@@ -91,7 +91,7 @@ public class AutoriFactory {
 
             ResultSet set = stmt.executeQuery();
 
-            loggedIn = set.next(); // Controllo se c'è almeno una riga
+            loggedIn = set.next(); // Se c'è almeno una riga allora...
             if (loggedIn) {
                 Autori autore = new Autori();
                 autore.setId(set.getInt("id"));
@@ -102,7 +102,7 @@ public class AutoriFactory {
                 stmt.close();
                 conn.close();
                 return autore;
-            } else {
+            } else { // altrimenti
                 return null;
             }
         } catch (SQLException ex) {
@@ -152,17 +152,7 @@ public class AutoriFactory {
 
     public Autori getAutoreByEmailPassword(String email, String password) {
 
-        /*Vecchio metodo:
-        List<Autori> autori = this.getAutori();
-        for (Autori a : autori) {
-            if (a.getEmail().equals(email) && a.getPassword().equals(password)) {
-                return a;
-            }
-        }
-        
-
-        return null;
-         */
+       
         try {
             Boolean loggedIn;
 
