@@ -1,0 +1,404 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1-lug-2019, 19.39.43
+    Author     : PC
+
+
+*/
+html { font-size:100%; }
+
+@media (max-width: 640px) { 
+body {font-size:1.3rem;} 
+} 
+
+@media (min-width: 641px) { 
+body {font-size:1.2rem;}
+} 
+ 
+@media (min-width:960px) { 
+body {font-size:1.4rem;} 
+} 
+
+@media (min-width:1100px) { 
+body {font-size:1.6rem;}
+} 
+
+*{
+    box-sizing: border-box;
+    border-color: black;
+    margin: 0px;
+}
+
+[class*="col-"] {
+float: left;
+}
+@media only screen and (min-width: 768px)
+{
+/* dimensioni delle colonne */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+/* For mobile phones: */ 
+[class*="col-"] { width: 100%; }
+
+@media only screen and (min-width: 600px)
+{ /* For tablets: */
+.col-s-1{width: 8.33%;}
+.col-s-2{width: 16.66%;}
+.col-s-3{width: 25%;}
+.col-s-4{width: 33.33%;}
+.col-s-5{width: 41.66%;}
+.col-s-6{width: 50%;}
+.col-s-7{width: 58.33%;}
+.col-s-8{width: 66.66%;}
+.col-s-9{width: 75%;}
+.col-s-10{width: 83.33%;}
+.col-s-11{width: 91.66%;}
+.col-s-12{width: 100%;}
+}
+
+@media only screen and (max-width: 600px)
+{
+header, aside{
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+}
+
+}
+
+#SU::after{
+    clear: both;
+    content:"";
+    display: table;
+}
+#GIU::after{
+    clear: both;
+    content:"";
+    display: table;
+}
+#SU{
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    
+}
+#GIU{
+    background-color: #cdd9f3;;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    color:#660000;
+    background-color: #cdd9f3;
+    width: 100%;
+    height: 100%;
+    border-width: medium;
+    border-style: solid;
+}
+
+header img{
+    height: 50%;
+    width : 30%;
+    float: left;
+}
+header{
+    height: 200px;
+    background-color: #9999ff;
+    font-size: 100%;
+    text-align: center;
+    float: left;
+}
+
+header h1{
+    color: black;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    border-left-width: medium;
+    border-left-style: solid;
+    width: 100%;
+    float: left;
+    height: 200px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li{
+    padding-top: 70px;
+    font-size: 200%;
+    font-weight: bold;
+    color: #660000;
+    border-right-width: medium;
+    border-right-style: solid;
+    background-color: #000099;
+    height: 100%;
+    width: 33.3333333%;
+    text-align: center;
+    float: left;
+}
+nav ul li:active, nav ul li:hover{
+    background-color: #e9e3ee;
+    color: #000099;  
+}
+
+nav ul li a:active, nav ul li a:hover{
+    background-color: #e9e3ee;
+    color: #000099;  
+}
+
+aside{
+    background-color: #cdd9f3;
+    text-align: center;
+    padding: 5%;
+}
+aside input{
+    width:60%;
+    height:50px;
+    font-size: 80%;
+    font-weight: bold;
+}
+aside p{
+    text-align: justify;
+    font-style: italic;
+    width: 100%;
+}
+aside ul{
+    text-align: left;
+}
+main {
+    background-color: #ccccff;
+    padding-left : 0;
+    padding-top : 75px;
+    padding-bottom : 75px;
+    height: 100%;
+    width: 100%;
+    border-left-width: medium;
+    border-left-style: solid;
+    font-family: Times New Roman, Arial, sans-serif;
+    font-size: 100%;
+    float: left;
+}
+#log{
+    border-width: medium;
+    border-style: solid;
+    background-color: #cdd9f3;
+    width: 80%;
+    text-align: left;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#log input{
+    width: 100%;
+}
+#accesso{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+main p{
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#content_main{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    height: 100%;
+}
+main form{
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 20px;
+    
+}
+form .col-8, form .col-s-8 {
+    text-align: left;
+}
+
+form .col-4, form .col-s-4 {
+    text-align: left;
+    font-weight: bold;
+}
+form ul{
+    padding:0;
+}
+#login{
+    text-align: center;
+}
+#main_val{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    height: 100%;
+}
+#autori_val{
+    text-align: left;
+    padding-left: 25%;
+}
+#autori_val ul{
+    padding-left: 0;
+}
+
+#val{
+    border-top-style: solid;
+    border-top-width: medium;
+}
+main img{
+    width: 50%;
+    height: 10%;
+}
+main h1{
+    color: black;
+    font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+main #profilo{
+    text-align: left;
+    text-decoration: underline;
+    position: relative;
+    float: left;
+}
+.profilo{
+    padding-left: 10%;
+}
+.profilo img{
+    width: 70%;
+    height: 70%;
+}
+#profilo{
+    text-decoration: underline;
+}
+.art{
+    padding: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.art h2{
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.art table{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.art tr{
+    height:15%;
+    background-color: #ccccff;
+}
+.art tr:nth-child(even) {
+    background-color: #003366;
+    color: white;
+}
+.art td{
+    padding: 20px;
+    font-size: 100%;
+}
+
+.art td:last-child{
+    float: left;
+}
+.art th{
+    background-color: black;
+    color: white;
+}
+.art input{
+    width: 100%;
+    height: 30px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.art input:active{
+    background-color: #000099;
+    color: white;
+}
+#new_art:hover{
+    background-color: #000099;
+    color: white;
+}
+
+td #canc{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+td #mod{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+#wrt_art{
+    position: relative;
+    float: right;
+}
+#write_art{
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 5%;
+}
+#cancellati{
+    width: 25%; 
+    position: relative;
+    float: left;
+}
+h2{
+    color: #330000;
+    font-size: 150%;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h3{
+   color:#660000; 
+}
+a:link {
+ background-color: #000099;
+ color : #ffffff;
+ text-decoration: none;
+ border-color: #660000;
+}
+
+a:visited {
+ background-color: #000099;
+ color : #ffffff;
+ text-decoration: none;
+}
+
+a:hover, a:active {
+ color : #ffffcc;
+ text-decoration : underline;
+}
